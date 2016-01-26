@@ -1,0 +1,212 @@
+/* #########################################################
+
+HOW TO CREATE A RESPONSIVE IMAGE SLIDER [TUTORIAL]
+
+"How to create a Responsive Image Slider [Tutorial]" was specially made for DesignModo by our friend Valeriu Timbuc.
+
+Links:
+http://vtimbuc.net
+http://designmodo.com
+http://vladimirkudinov.com
+
+######################################################### */
+
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  { outline: none; }
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.flexslider a img { outline: none; border: none; }
+
+.flexslider {
+	margin: 0;
+	padding: 0;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+	width: 100%;
+	display: block;
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html[xmlns] .slides { display: block; }
+* html .slides { height: 1%; }
+
+
+
+/* Theme Styles */
+.flexslider {
+	position: relative;
+	zoom: 1;
+	
+}
+
+/* Edit it if you want */
+.flex-container {
+	max-width: 100%;
+	position:relative;
+}
+
+.flexslider .slides { zoom: 1; height:500px; }
+
+
+
+/* Direction Nav */
+.flex-direction-nav { width:120px; position:absolute; bottom:25px; right:25px;}
+.flex-direction-nav a {
+	display: block;
+	width: 52px;
+	height: 52px;
+	top:400px;
+	cursor: pointer;
+	text-indent: -9999px;
+	float:left;
+	z-index: 999;
+	background: url(img/arrow.png) no-repeat;
+	margin:0 2px;
+}
+
+
+
+.flex-direction-nav .flex-next {
+	right: 130px;
+	background-position: bottom;
+
+}
+
+.flex-direction-nav .flex-prev {
+	left: 130px;
+
+}
+
+.flex-direction-nav .flex-next:before { background-position: bottom; }
+.flex-direction-nav .flex-prev:before { background-position: top; }
+
+.flex-direction-nav .flex-next:after {
+	right: 130px;
+}
+
+.flex-direction-nav .flex-prev:after {
+	left: 130px;
+}
+
+
+
+/* Control Nav */
+.flexslider .flex-control-nav {
+	position: absolute;
+	width: 100%;
+	bottom: -40px;
+	text-align: center;
+	margin: 0 0 0 -10px;
+	display:none;
+}
+
+.flex-control-nav li {
+	display: inline-block;
+	zoom: 1;
+}
+
+.flex-control-paging li a {
+	display: block;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 12px;
+	height: 12px;
+	margin: 0 3px;
+	background-color: #b6b6b6 \9;
+
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+
+	-webkit-box-shadow: inset 0 0 0 2px #b6b6b6;
+	-moz-box-shadow: inset 0 0 0 2px #b6b6b6;
+	box-shadow: inset 0 0 0 2px #b6b6b6;
+}
+
+.flex-control-paging li a.flex-active {
+	background-color: #82d344;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#82d344), to(#51af34));
+	background-image: -webkit-linear-gradient(top, #82d344, #51af34);
+	background-image: -moz-linear-gradient(top, #82d344, #51af34);
+	background-image: -o-linear-gradient(top, #82d344, #51af34);
+	background-image: linear-gradient(to bottom, #82d344, #51af34);
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+
+#round_slide {
+				border-radius: 200px;
+				-webkit-border-radius: 200px;
+				-moz-border-radius: 200px;
+				-ms-border-radius: 200px;
+				-o-border-radius: 200px;
+				overflow: hidden;
+				width: 160px;
+				height: 160px;
+				position:relative;
+				display:inline-block;
+				box-shadow:0 0 4px rgba(0,0,0,.2);
+				-webkit-box-shadow:0 0 4px rgba(0,0,0,.2);
+				-moz-box-shadow:0 0 4px rgba(0,0,0,.2);
+				-o-box-shadow:0 0 4px rgba(0,0,0,.2);
+				-ms-box-shadow:0 0 4px rgba(0,0,0,.2);
+				margin:10px 4px;
+			}
+#round_slide {
+				border: 10px solid #fff;
+				z-index: 2;
+				background:#FFF;
+			}
+#round_slide span { }
+#carousel img {
+				display: block;
+				float: left;
+			}	
+
+.flexslider .slides { height:auto;} 
+@media screen and (max-width: 960px) {
+	.flex-container {
+	width: 960px;
+	height:290px;
+}
+.flexslider { height:290px;}
+.flexslider .slides { height:290px;}
+.flexslider .slides img {
+	width: 960px;
+	height:290px;
+}
+.flex-direction-nav { width:120px; position:absolute; bottom:2px; right:100px;}
+.flex-viewport { overflow:visible;}
+}
