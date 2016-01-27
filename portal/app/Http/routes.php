@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('portal.index');
 });
 
+Route::get('/whoisdeveloper', function () {
+	return 'Rohit Kaundal is developer ';
+});
 /*
 |--------------------------------------------------------------------------
 | Application Routes
