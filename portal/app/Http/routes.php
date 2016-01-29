@@ -18,6 +18,14 @@ Route::get('/', function () {
 Route::get('/whoisdeveloper', function () {
 	return 'Rohit Kaundal is developer ';
 });
+
+Route::get('/login', function () {
+	return view('portal.login');
+});
+
+Route::get('/register', function () {
+	return view('portal.signup');
+});
 /*
 |--------------------------------------------------------------------------
 | Application Routes

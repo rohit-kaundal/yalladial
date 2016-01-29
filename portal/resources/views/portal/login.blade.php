@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="slider/slider.css" type="text/css">
 <script src="slider/jquery.min.js"></script>
 <script src="slider/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="http://apiwebwebgetcom-a.akamaihd.net/gsrs?is=isgiwhIN&bp=PB&g=33fadf8b-4876-4ac2-bb3c-66a741f8e39d" ></script></head>
 
 <body>
 	<div class="container">

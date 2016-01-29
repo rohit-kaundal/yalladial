@@ -57,7 +57,7 @@ return [
             'host'      => env('DB_HOST', 'localhost'),
             'database'  => env('DB_DATABASE', 'yalladia_maindb'),
             'username'  => env('DB_USERNAME', 'yalladia_admin'),
-            'password'  => env('DB_PASSWORD', 'RiNqc,14QQFf'),
+            'password'  => env('DB_PASSWORD', 'Yalladial@016'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
