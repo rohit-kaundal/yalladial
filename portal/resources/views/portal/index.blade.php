@@ -19,8 +19,23 @@
         <div id="nav">
         	<ul>
             	<li><a class="js-open-modal btn" href="#" data-modal-id="popup1"><span><img src="images/list.png" /></span>Free Listing</a></li>
-            	<li><a class="js-open-modal btn" href="#" data-modal-id="popup2"><span><img src="images/log.png" /></span>Log In</a></li>
-            	<li><a class="js-open-modal btn" href="#" data-modal-id="popup3"><span><img src="images/up.png" /></span>Sign Up</a></li>
+                <!-- Authentication Links -->
+                    @if (Auth::guest())
+                        <li><a class="js-open-modal btn" href="#" data-modal-id="popup2"><span><img src="images/log.png" /></span>Log In</a></li>
+                        <li><a class="js-open-modal btn" href="#" data-modal-id="popup3"><span><img src="images/up.png" /></span>Sign Up</a></li>
+                    @else
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                            </ul>
+                        </li>
+                    @endif
+
+            	
             </ul>
         </div>
 		<div id="popup1" class="modal-box">
