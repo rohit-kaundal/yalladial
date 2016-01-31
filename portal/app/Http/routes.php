@@ -18,6 +18,17 @@ Route::get('/', function () {
 Route::get('/whoisdeveloper', function () {
 	return 'Rohit Kaundal is developer ';
 });
+
+Route::controllers([
+  'auth' => 'Auth\AuthController',
+  'password' => 'Auth\PasswordController',
+]);
+
+
+
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -31,4 +42,10 @@ Route::get('/whoisdeveloper', function () {
 
 Route::group(['middleware' => ['web']], function () {
     //
+});
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
 });
