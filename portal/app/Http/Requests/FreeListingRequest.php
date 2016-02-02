@@ -27,7 +27,7 @@ class FreeListingRequest extends Request
 
         'companyname' => 'required',
         'city' => 'required',
-        'pincode' => 'required'
+        'pincode' => 'required',
         'email'=> 'required|email'
        
         ];
