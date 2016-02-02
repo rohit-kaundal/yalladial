@@ -209,6 +209,9 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         //'Form'      => Illuminate\Html\FormFacade, 
         //'HTML'      => Illuminate\Html\HtmlFacade,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+
 
     ],
 
