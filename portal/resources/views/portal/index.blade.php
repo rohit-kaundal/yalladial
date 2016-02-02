@@ -47,7 +47,7 @@
     <div class="contact-lis">
           
         	 
-             {!! Form::open(array('url'=>'/free-listing')) !!}
+             <form action="/free-listing" method="post">
                 	
                 	
                      <h3>Enter your details below</h3>
@@ -62,9 +62,8 @@
                     <p><label>Mobile Number*</label> <input type="text" name="mobileno" /></p>
                     <h2>*Denotes Mandatory Fields</h2>
                    <p><label>&nbsp;</label><input type="submit" value="Submit" class="contact-sub" /></p>
-                  {!! Form::close() !!}
-
                   
+                  </form>
               
                </div>
 

@@ -14,7 +14,7 @@ class FreeListingController extends Controller
 
     public function addListing(FreeListingRequest $request){
 
-    	return print_r($request);
+    	 print_r($request->request);
 
     	//return Redirect::to('/fullcat')->with('message', 'Listing added');
 

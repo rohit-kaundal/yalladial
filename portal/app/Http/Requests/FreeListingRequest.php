@@ -29,6 +29,7 @@ class FreeListingRequest extends Request
         'city' => 'required',
         'pincode' => 'required'
         'email'=> 'required|email'
+       
         ];
     }
 }
