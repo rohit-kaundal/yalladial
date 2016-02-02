@@ -12,7 +12,7 @@
 
 <body>
 
-ROHIT
+
 	<div class="container">
     	<div class="header">
     	<div class="logo">
@@ -73,17 +73,21 @@ ROHIT
   </div>
   <footer> <a href="#" class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
+
+
+<!-- copid from here -->
+
 <div id="popup2" class="modal-box">
   <header> <a href="#" class="js-modal-close close">×</a>
     <h3>Log In</h3>
   </header>
   <div class="modal-body">
     <div class="contact">
-        			<h4><a href="#"><img src="images/login.png" /></a></h4>
-        	 <form action="/login" method="post">
-                	{!! csrf_field() !!}
-                	<p> <input type="text" placeholder="Your Email" name="email" /></p>
-                	<p> <input type="password" placeholder="Password" name="password"/></p>
+                    <h4><a href="#"><img src="images/login.png" /></a></h4>
+             <form action="/login" method="post">
+                    {!! csrf_field() !!}
+                    <p> <input type="text" placeholder="Your Email" name="email" /></p>
+                    <p> <input type="password" placeholder="Password" name="password"/></p>
               </form>
               <h1>Forgot your Password?</h1>
               <h2><img src="images/tik.png" />Remember?</h2>
@@ -92,9 +96,11 @@ ROHIT
                <h1>Not a registered user yet? <a href="#">Login now!</a></h1>
                
         </div>           
-		</div>
+        </div>
   <footer> <a href="#" class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
+
+
 <div id="popup3" class="modal-box">
   <header> <a href="#" class="js-modal-close close">×</a>
     <h3>Sign Up</h3>
