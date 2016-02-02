@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+ROHIT
 	<div class="container">
     	<div class="header">
     	<div class="logo">
@@ -78,10 +80,10 @@
   <div class="modal-body">
     <div class="contact">
         			<h4><a href="#"><img src="images/login.png" /></a></h4>
-        	 <form>
-                	
-                	<p> <input type="text" placeholder="Your Email" /></p>
-                	<p> <input type="text" placeholder="Password" /></p>
+        	 <form action="/login" method="post">
+                	{!! csrf_field() !!}
+                	<p> <input type="text" placeholder="Your Email" name="email" /></p>
+                	<p> <input type="password" placeholder="Password" name="password"/></p>
               </form>
               <h1>Forgot your Password?</h1>
               <h2><img src="images/tik.png" />Remember?</h2>
