@@ -105,12 +105,12 @@
   <div class="modal-body">
     <div class="contact">
         			<h4><a href="#"><img src="images/login.png" /></a></h4>
-        	 <form>
-                	
-                	<p> <input type="text" placeholder="First Name" class="contact-half" /> <input type="text" placeholder="Last Name" class="contact-half" style=" margin:0 0 0 2px;" /></p>
-                	<p> <input type="text" placeholder="Your Email" /></p>
-                	<p> <input type="text" placeholder="Re-enter Your Email" /></p>
-                	<p> <input type="text" placeholder="Password" /></p>
+        	 <form action="/register" method="post">
+                	{!! csrf_field() !!}
+                	<p> <input type="text" name="name" placeholder="Name" class="contact-half" /> </p>
+                	<p> <input type="text" name="email" placeholder="Your Email" /></p>
+                	<p> <input type="password" name="password" placeholder="Password" /></p>
+                    <p> <input type="password" name="password_confirmation" placeholder="Re-enter Your Password" /></p>
                <input type="submit" value="Sign UP" class="contact-sub" />
               </form>
                <h5>or Choose on the following login methods</h5>
