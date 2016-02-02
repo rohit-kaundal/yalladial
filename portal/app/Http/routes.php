@@ -29,7 +29,9 @@ Route::post('password/email', 'Auth\PasswordController@postEmail');
 Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('password/reset', 'Auth\PasswordController@postReset');
 
-
+// Routes freelisting
+Route::get('/free-listing','FreeListingController@getListing');
+Route::post('/free-listing','FreeListingController@addListing');
 
 
 Route::controllers([
