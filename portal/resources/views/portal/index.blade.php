@@ -46,22 +46,25 @@
   <div class="modal-body">
     <div class="contact-lis">
           
-        	 <form>
+        	 
+             {!! Form::open(array('url'=>'/free-listing')) !!}
                 	
                 	
                      <h3>Enter your details below</h3>
-                	<p><label>Company Name*</label> <input type="text"  /></p>
-                	<p><label>Contact Person</label> <input type="text"  /></p>
-                	<p><label>City*</label> <input type="text"  /></p>
-                    <p><label>Pin Code*</label> <input type="text"  /></p>
-                    <p><label>Email ID*</label> <input type="text"  /></p>
-                    <p><label>Landline No*</label> <input type="text"  /></p>
+                	<p><label>Company Name*</label> <input type="text" name="companyname"  /></p>
+                	<p><label>Contact Person</label> <input type="text" name="contactperson" /></p>
+                	<p><label>City*</label> <input type="text"  name="city"/></p>
+                    <p><label>Pin Code*</label> <input type="text" name="pincode" /></p>
+                    <p><label>Email ID*</label> <input type="text"  name="email" /></p>
+                    <p><label>Landline No*</label> <input type="text" name="landlineno" /></p>
                     <p>&nbsp;</p>
                     <p align="center">Or</p>
-                    <p><label>Mobile Number*</label> <input type="text"  /></p>
+                    <p><label>Mobile Number*</label> <input type="text" name="mobileno" /></p>
                     <h2>*Denotes Mandatory Fields</h2>
                    <p><label>&nbsp;</label><input type="submit" value="Submit" class="contact-sub" /></p>
-                  </form>
+                  {!! Form::close() !!}
+
+                  
               
                </div>
 

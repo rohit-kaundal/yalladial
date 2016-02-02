@@ -6,14 +6,17 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\FreeListingRequest;
 
 class FreeListingController extends Controller
 {
     //
 
-    public function addListing(){
+    public function addListing(FreeListingRequest $request){
 
-    	Redirect::to('/fullcat');
+    	return print_r($request);
+
+    	//return Redirect::to('/fullcat')->with('message', 'Listing added');
 
     }
 

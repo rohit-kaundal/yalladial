@@ -110,6 +110,11 @@
         	<input type="text" placeholder="Search for enything" />
             <input type="submit" value="Search" />
         
+      @if(Session::has('message'))
+            <div class="alert alert-info">
+              {{Session::get('message')}}
+            </div>
+        @endif
         </div>
         <div id="pre">
     	<div class="flex-container">
