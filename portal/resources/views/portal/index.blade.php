@@ -17,6 +17,7 @@
         	<a href="#"><img src="images/logo.png" /></a>
         </div>
         <div id="nav">
+        
         	<ul>
             	<li><a class="js-open-modal btn" href="#" data-modal-id="popup1"><span><img src="images/list.png" /></span>Free Listing</a></li>
                 <!-- Authentication Links -->
