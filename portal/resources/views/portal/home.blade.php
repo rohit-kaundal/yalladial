@@ -27,15 +27,12 @@
                         <li><a class="js-open-modal btn" href="#" data-modal-id="popup2"><span><img src="images/log.png" /></span>Log In</a></li>
                         <li><a class="js-open-modal btn" href="#" data-modal-id="popup3"><span><img src="images/up.png" /></span>Sign Up</a></li>
                     @else
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                            </ul>
-                        </li>
+                        
+                            
+                                <li><a href=><i ></i><span><img src="images/log.png" /></span>Welcome {{ Auth::user()->name }}</a></li>
+                                <li class="fa fa-btn fa-sign-out"><a href="{{ url('/logout') }}">logout</a></li>
+                            
+                        
                     @endif
 
             	
@@ -88,13 +85,13 @@
                     {!! csrf_field() !!}
                     <p> <input type="text" placeholder="Your Email" name="email" /></p>
                     <p> <input type="password" placeholder="Password" name="password"/></p>
-              </form>
+              
               <h1>Forgot your Password?</h1>
               <h2><img src="images/tik.png" />Remember?</h2>
                <input type="submit" value="Login" />
                <img src="images/line.png" />
                <h1>Not a registered user yet? <a href="#">Login now!</a></h1>
-               
+               </form>
         </div>           
         </div>
   <footer> <a href="#" class="btn btn-small js-modal-close">Close</a> </footer>

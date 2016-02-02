@@ -40,9 +40,6 @@ Route::controllers([
     ]);
 
 
-Route::get('/', function () {
-    return view('portal.index');
-});
 
 Route::get('/whoisdeveloper', function () {
 	return 'Rohit Kaundal is developer ';
@@ -54,4 +51,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
     Route::get('/home', 'HomeController@index');
+    
+	Route::get('/', function () {
+	    return view('portal.home');
+	});
 });
